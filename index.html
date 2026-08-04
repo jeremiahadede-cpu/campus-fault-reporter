@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <title>Campus Fault Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Strathmore Repair Tracker</h1>
+    <div id="status-message"></div>
+  
+  
+      <div class="box">
+        <h2>Submit Fault Report</h2>
+        <form action="process.php" method="POST" id="faultForm">
+
+            <div class="field">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <span id="nameMessage" class="error"></span>
+            </div>
+
+            <div class="field">
+                <label for="studentid">Student ID</label>
+                <input type="text" id="studentid" name="studentid">
+                <span id="idMessage" class="error"></span>
+            </div>
+
+            <div class="field">
+                <label for="building">Building</label>
+                <select id="building" name="building">
+                    <option value="">-- Select --</option>
+                    <option value="Student Centre">Student Centre</option>
+                    <option value="Phase 1">Phase 1</option>
+                </select>
+                <span id="buildingMessage" class="error"></span>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span id="emailMessage" class="error"></span>
+            </div>
+
+            <div class="field">
+                <p>Category:</p>
+                <input type="radio" id="plumbing" name="category" value="Plumbing">
+                <label for="plumbing">Plumbing</label>
+                <input type="radio" id="electrical" name="category" value="Electrical">
+                <label for="electrical">Electrical</label>
+                <span id="catMessage" class="error"></span>
+            </div>
+
+            <div class="field" id="assetTagContainer" hidden>
+                <label for="assetTag">Asset Tag</label>
+                <input type="text" id="assetTag" name="asset_tag">
+            </div>
+
+            <div class="field">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description">
+                <span id="descMessage" class="error"></span>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <div id="preview">
+        <h2>Live Preview</h2>
+        <p>Name: <span id="prevName">N/A</span></p>
+        <p>Category: <span id="prevCat">N/A</span></p>
+        <p>Details: <span id="prevDesc">N/A</span></p>
+    </div>
+
+    <footer>
+        <p> 2026 Strathmore University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
