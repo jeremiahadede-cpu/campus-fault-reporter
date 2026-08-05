@@ -1,1 +1,70 @@
 
+body {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+h1 {
+    color: red;
+    font-size: 36px;
+    text-align: center;
+}
+h2 {
+    color: green;
+    font-size: 30px;
+    text-align: left;
+}
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    padding: 20px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr; /* for 3 equal columns */
+    grid-gap: 20px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around; /*for horizontal alignment*/
+    padding: 20px;
+    flex-wrap: wrap; /* for wrapping items to the next line if necessary */
+}
+input [type="text"], /* for text input fields */
+input[type="email"], /* for email input fields */
+ textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.flex-container input[type= "radio"] {
+    margin: 10px;
+    width:auto;
+}
+.box {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* for single column on small screens */
+    }
+    .flex-container {
+        flex-direction: column; /* to stack items vertically on small screens */
+    }
+}
+input:focus, select:focus, textarea:focus {
+    border: 2px solid blue;
+    outline: none; /*this removes the default outline */
+}
+#submitBtn:hover {
+    background-color: rgb(88, 218, 88); /* changes background color on hover */
+}
