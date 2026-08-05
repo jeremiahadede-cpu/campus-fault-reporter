@@ -12,4 +12,4 @@ A web application designed for students and staff to log campus facility issues 
 
  Local Setup
 1. Clone the repository to your local web server directory 
-2. Open `index.html` in your browser or run through Apache.
+2. Open index.html in your browser or run through Apache.
