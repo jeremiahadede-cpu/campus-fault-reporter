@@ -1,18 +1,22 @@
-
 body {
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    background-color: white;
+    font-size: 24px; /* sets the base font size for the body */
+    font-family: Arial, sans-serif; /* sets the font family for the body */
+    background-color: white; /* sets the background color for the body */
 }
 h1 {
-    color: red;
-    font-size: 36px;
-    text-align: center;
+    color: red; /* sets the text color for h1 elements */
+    font-size: 36px; /* sets the font size for h1 elements */
+    text-align: center; /* centers the text for h1 elements */
 }
 h2 {
-    color: green;
-    font-size: 30px;
-    text-align: left;
+    color: green; /* sets the text color for h2 elements */
+    font-size: 30px; /* sets the font size for h2 elements */
+    text-align: left; /* aligns the text to the left for h2 elements */
+}
+h3 {
+    color: blue; /* sets the text color for h3 elements */
+    font-size: 24px; /* sets the font size for h3 elements */
+    text-align: left; /* aligns the text to the left for h3 elements */
 }
 footer {
     background-color: blue;
@@ -22,14 +26,14 @@ footer {
 }
 
 .grid-container {
-    display: grid;
-    padding: 20px;
-    text-align: center;
+    display: grid; /* enables grid layout */
+    padding: 20px; /*gives padding inside the grid container*/
+    text-align: center; /* centers the text inside the grid container */
     grid-template-columns: 1fr 1fr 1fr; /* for 3 equal columns */
-    grid-gap: 20px;
+    grid-gap: 20px; /* adds space between grid items */
 }
 .flex-container {
-    display: flex;
+    display: flex; /* enables flexbox layout */
     justify-content: space-around; /*for horizontal alignment*/
     padding: 20px;
     flex-wrap: wrap; /* for wrapping items to the next line if necessary */
@@ -40,7 +44,7 @@ input[type="email"], /* for email input fields */
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* ensures padding and border are included in the total width and height */
 }
 .flex-container input[type= "radio"] {
     margin: 10px;
@@ -53,7 +57,7 @@ input[type="email"], /* for email input fields */
     border-radius: 7px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-@media (max-width 480px) {
+@media (max-width: 480px) { /* for small screens */
     .grid-container {
         grid-template-columns: 1fr; /* for single column on small screens */
     }
@@ -61,10 +65,10 @@ input[type="email"], /* for email input fields */
         flex-direction: column; /* to stack items vertically on small screens */
     }
 }
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus { /* for input fields, select dropdowns, and textareas when focused */
     border: 2px solid blue;
     outline: none; /*this removes the default outline */
 }
-#submitBtn:hover {
+#submitBtn:hover { /* for the submit button when hovered */
     background-color: rgb(88, 218, 88); /* changes background color on hover */
 }
