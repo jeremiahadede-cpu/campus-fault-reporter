@@ -13,19 +13,19 @@
         <h2>Submit Fault Report</h2>
         <form action="process.php" method="POST" id="faultForm">
 
-            <div class="field">
+            <div class="field grid-container">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname">
                 <span id="nameMessage" class="error"></span>
             </div>
 
-            <div class="field">
+            <div class="field grid-container">
                 <label for="studentid">Student ID</label>
                 <input type="text" id="studentid" name="studentid">
                 <span id="idMessage" class="error"></span>
             </div>
 
-            <div class="field">
+            <div class="field grid-container">
                 <label for="building">Building</label>
                 <select id="building" name="building">
                     <option value="">-- Select --</option>
@@ -35,13 +35,13 @@
                 <span id="buildingMessage" class="error"></span>
             </div>
 
-            <div class="field">
+            <div class="field grid-container">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
                 <span id="emailMessage" class="error"></span>
             </div>
 
-            <div class="field">
+            <div class="field flex-container">
                 <p>Category:</p>
                 <input type="radio" id="plumbing" name="category" value="Plumbing">
                 <label for="plumbing">Plumbing</label>
@@ -50,12 +50,12 @@
                 <span id="catMessage" class="error"></span>
             </div>
 
-            <div class="field" id="assetTagContainer" hidden>
+            <div class="field grid-container" id="assetTagContainer" hidden>
                 <label for="assetTag">Asset Tag</label>
                 <input type="text" id="assetTag" name="asset_tag">
             </div>
 
-            <div class="field">
+            <div class="field grid-container">
                 <label for="description">Description</label>
                 <input type="text" id="description" name="description">
                 <span id="descMessage" class="error"></span>
